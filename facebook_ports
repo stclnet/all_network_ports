@@ -1,0 +1,28 @@
+✅ Ports Used by Facebook (Mobile App, PC App, Browser)
+These ports allow general access to Facebook services including messaging, video, voice, and real-time notifications.
+
+1. TCP Ports
+Port	Purpose
+80	Standard HTTP (web traffic)
+443	HTTPS (secure web traffic) — most important
+5222	XMPP messaging protocol (used for Facebook Chat/Meta Messenger)
+8080	Alternate HTTP (occasionally used)
+
+2. UDP Ports
+Port	Purpose
+3478-3481	STUN/TURN (used for WebRTC: voice/video calls)
+49152–65535	Dynamic/ephemeral ports used in WebRTC peer-to-peer connections
+
+💡 Notes:
+Port 443 (HTTPS) is essential for Facebook access on all platforms.
+
+WebRTC ports (UDP 3478–3481) are used when making audio/video calls via Messenger on browser or mobile.
+
+Facebook apps (mobile or PC) do not require manual port forwarding in normal home networks unless you're behind a restrictive firewall or using enterprise-level NAT.
+
+🔐 Tips for Network Configuration
+Ensure your firewall/router allows outgoing connections to the ports above.
+
+Enable UPnP (Universal Plug and Play) on your router — it helps dynamically open ports for apps like Facebook Messenger during voice/video calls.
+
+Avoid over-restrictive firewall rules unless absolutely necessary.
