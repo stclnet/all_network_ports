@@ -1,0 +1,42 @@
+WhatsApp uses various ports depending on the platform and communication type (messages, calls, file transfers, etc.). 
+If you want to forward ports for WhatsApp to improve connectivity on mobile, browser, or PC, here are the ports to forward:
+
+✅ WhatsApp Ports to Forward (All Platforms: Mobile, Web, PC)
+TCP Ports (for messaging, media, and web access):
+80 – Standard HTTP
+
+443 – HTTPS (used for WhatsApp Web and WhatsApp Desktop)
+
+5222 – XMPP messaging protocol
+
+5223 – Secure messaging (legacy use)
+
+UDP Ports (used for voice and video calls):
+3478
+
+3479
+
+4244
+
+49152–65535 – Dynamic ports for peer-to-peer media (especially for voice/video calls)
+
+🔄 Platform Breakdown
+Platform	Ports Needed
+Mobile App	TCP: 80, 443, 5222, 5223
+UDP: 3478–3479, 49152–65535
+WhatsApp Web	TCP: 443 (essential), 80
+WhatsApp PC App	Same as WhatsApp Web, plus optional UDP 3478–3479 for call support
+
+🔐 Notes:
+WhatsApp uses end-to-end encryption; port forwarding won’t expose message content.
+
+Most routers allow WhatsApp to function fine without forwarding due to NAT traversal and STUN support.
+
+Port forwarding is only necessary in restricted network environments (e.g., strict corporate firewalls, or double NAT setups).
+
+⚠️ Reminder:
+Only forward ports if you're confident in your network setup.
+
+Consider setting a static IP for the device receiving the forwarded traffic.
+
+Do not open 49152–65535 globally unless absolutely necessary—use port triggering or limit to known device IPs.
